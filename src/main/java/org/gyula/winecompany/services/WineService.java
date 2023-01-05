@@ -6,6 +6,12 @@ import java.util.UUID;
 
 public interface WineService {
 
+    WineDTO saveNewWine(WineDTO wineDTO);
+
     WineDTO getWineById(UUID wineId);
 
+
+    void updateWine(UUID wineId, WineDTO wineDTO);
+
+    void deleteWine(UUID windId);
 }
