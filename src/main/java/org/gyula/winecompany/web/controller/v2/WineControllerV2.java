@@ -1,8 +1,6 @@
 package org.gyula.winecompany.web.controller.v2;
 
-import org.gyula.winecompany.services.WineService;
 import org.gyula.winecompany.services.v2.WineServiceV2;
-import org.gyula.winecompany.web.model.WineDTO;
 import org.gyula.winecompany.web.model.v2.WineDTOV2;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -21,7 +19,7 @@ public class WineControllerV2 {
     }
 
     @GetMapping({"/{wineId}"})
-    public ResponseEntity<WineDTOV2> getWine(@PathVariable("wineId") UUID wineId) {
+    public ResponseEntity<WineDTOV2> getWineById(@PathVariable("wineId") UUID wineId) {
         return new ResponseEntity<>(wineServiceV2.getWineById(wineId), HttpStatus.OK);
     }
 
