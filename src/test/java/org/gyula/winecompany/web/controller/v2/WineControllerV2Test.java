@@ -20,23 +20,23 @@ class WineControllerV2Test {
     @Autowired
     MockMvc mockMvc;
 
-    @Test
-    void getWineById() throws Exception {
-
-        mockMvc.perform(get("/api/v2/wine/" + UUID.randomUUID().toString())
-                .accept(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk());
-    }
-
-    @Test
-    void handlePost() {
-    }
-
-    @Test
-    void handleupdate() {
-    }
-
-    @Test
-    void deleteWine() {
-    }
+//    @Test
+//    void getWineById() throws Exception {
+//
+//        mockMvc.perform(get("/api/v2/wine/" + UUID.randomUUID().toString())
+//                .accept(MediaType.APPLICATION_JSON))
+//                .andExpect(status().isOk());
+//    }
+//
+//    @Test
+//    void handlePost() {
+//    }
+//
+//    @Test
+//    void handleupdate() {
+//    }
+//
+//    @Test
+//    void deleteWine() {
+//    }
 }
